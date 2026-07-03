@@ -1,0 +1,15 @@
+streamlit
+faster-whisper
+sounddevice
+soundfile
+numpy
+pandas
+scikit-learn
+torch
+transformers
+datasets
+accelerate
+sentencepiece
+rapidfuzz
+google-generativeai
+python-dotenv

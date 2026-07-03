@@ -1,0 +1,202 @@
+[
+  {
+    "case_id": "case_001",
+    "title": "검찰 사칭 안전계좌 송금 요구",
+    "conversation": [
+      "서울중앙지검 수사관입니다.",
+      "고객님 명의 계좌가 범죄에 연루되었습니다.",
+      "지금 바로 안전계좌로 300만 원을 이체하셔야 합니다."
+    ],
+    "is_phishing": 1,
+    "multi_labels": [
+      "기관사칭",
+      "금전요구",
+      "긴급압박"
+    ],
+    "risk_score": 96,
+    "keywords": [
+      "검찰",
+      "중앙지검",
+      "수사관",
+      "명의 계좌",
+      "범죄",
+      "안전계좌",
+      "이체",
+      "송금",
+      "지금 바로"
+    ],
+    "warning_reason": "검찰 사칭과 안전계좌 송금 요구가 동시에 나타납니다.",
+    "case_summary": "수사기관을 사칭해 계좌가 범죄에 연루됐다고 속이고 안전계좌 송금을 요구하는 사례입니다.",
+    "recommended_response": [
+      "성함, 소속, 사건번호를 알려주세요. 제가 직접 공식 대표번호로 확인하겠습니다.",
+      "전화로는 송금하지 않겠습니다. 은행 창구나 가족에게 먼저 확인하겠습니다.",
+      "지금 바로 결정하지 않겠습니다. 전화를 끊고 확인하겠습니다."
+    ],
+    "source_type": "synthetic",
+    "use_for_training": true,
+    "use_for_retrieval": true
+  },
+  {
+    "case_id": "case_002",
+    "title": "금융감독원 사칭 개인정보 요구",
+    "conversation": [
+      "금융감독원 담당자입니다.",
+      "고객님의 계좌 보호를 위해 인증번호를 확인해야 합니다.",
+      "문자로 받은 인증번호를 불러주세요."
+    ],
+    "is_phishing": 1,
+    "multi_labels": [
+      "기관사칭",
+      "개인정보",
+      "긴급압박"
+    ],
+    "risk_score": 92,
+    "keywords": [
+      "금융감독원",
+      "금감원",
+      "담당자",
+      "계좌 보호",
+      "인증번호",
+      "불러주세요"
+    ],
+    "warning_reason": "기관 사칭 후 인증번호를 요구합니다.",
+    "case_summary": "금융기관이나 감독기관을 사칭해 인증번호를 탈취하는 사례입니다.",
+    "recommended_response": [
+      "인증번호와 비밀번호는 전화로 말하지 않겠습니다.",
+      "제가 직접 공식 대표번호로 다시 전화하겠습니다.",
+      "개인정보는 공식 앱이나 은행 창구에서 직접 확인하겠습니다."
+    ],
+    "source_type": "synthetic",
+    "use_for_training": true,
+    "use_for_retrieval": true
+  },
+  {
+    "case_id": "case_003",
+    "title": "자녀 사칭 합의금 요구",
+    "conversation": [
+      "엄마 나야. 휴대폰이 고장나서 새 번호로 연락했어.",
+      "사고가 나서 합의금이 급하게 필요해.",
+      "지금 바로 100만 원만 보내줘."
+    ],
+    "is_phishing": 1,
+    "multi_labels": [
+      "가족사칭",
+      "금전요구",
+      "긴급압박"
+    ],
+    "risk_score": 94,
+    "keywords": [
+      "엄마 나야",
+      "휴대폰 고장",
+      "새 번호",
+      "사고",
+      "합의금",
+      "지금 바로",
+      "보내줘"
+    ],
+    "warning_reason": "가족 사칭과 긴급 송금 요구가 함께 나타납니다.",
+    "case_summary": "자녀를 사칭해 휴대폰 고장을 핑계로 새 번호를 사용하게 한 뒤 합의금을 요구하는 사례입니다.",
+    "recommended_response": [
+      "기존에 저장된 번호로 다시 전화해서 확인하겠습니다.",
+      "가족에게 직접 확인하기 전에는 돈을 보내지 않겠습니다.",
+      "지금 바로 결정하지 않겠습니다. 가족에게 먼저 확인하겠습니다."
+    ],
+    "source_type": "synthetic",
+    "use_for_training": true,
+    "use_for_retrieval": true
+  },
+  {
+    "case_id": "case_004",
+    "title": "보안 앱 설치 유도",
+    "conversation": [
+      "고객님의 휴대폰이 해킹 위험에 노출되었습니다.",
+      "제가 보내드리는 링크를 클릭해서 보안 앱을 설치하세요.",
+      "원격으로 확인해드리겠습니다."
+    ],
+    "is_phishing": 1,
+    "multi_labels": [
+      "앱설치유도",
+      "긴급압박",
+      "개인정보"
+    ],
+    "risk_score": 88,
+    "keywords": [
+      "해킹 위험",
+      "링크",
+      "클릭",
+      "보안 앱",
+      "앱 설치",
+      "원격"
+    ],
+    "warning_reason": "링크 클릭과 원격 제어 앱 설치를 유도합니다.",
+    "case_summary": "악성 앱 설치 후 원격 제어를 통해 금융 정보를 탈취하는 사례입니다.",
+    "recommended_response": [
+      "상대방이 보낸 링크나 앱은 설치하지 않겠습니다.",
+      "필요하다면 공식 앱스토어에서 직접 검색해서 설치하겠습니다.",
+      "원격 제어는 허용하지 않겠습니다."
+    ],
+    "source_type": "synthetic",
+    "use_for_training": true,
+    "use_for_retrieval": true
+  },
+  {
+    "case_id": "case_005",
+    "title": "무료 체험 가입 후 자동결제 유도",
+    "conversation": [
+      "오늘만 무료 체험 혜택을 드립니다.",
+      "회원가입만 하시면 사은품을 받을 수 있습니다.",
+      "카드 정보를 입력하면 자동으로 혜택이 적용됩니다."
+    ],
+    "is_phishing": 1,
+    "multi_labels": [
+      "가입유도",
+      "개인정보",
+      "긴급압박"
+    ],
+    "risk_score": 76,
+    "keywords": [
+      "오늘만",
+      "무료 체험",
+      "회원가입",
+      "사은품",
+      "카드 정보",
+      "자동결제",
+      "혜택"
+    ],
+    "warning_reason": "혜택을 강조하며 가입과 카드 정보 입력을 유도합니다.",
+    "case_summary": "무료 혜택처럼 보이지만 카드 정보 입력과 자동결제로 이어질 수 있는 가입 유도 사례입니다.",
+    "recommended_response": [
+      "지금 바로 가입하지 않겠습니다. 가족과 조건을 확인한 뒤 결정하겠습니다.",
+      "무료 체험 이후 자동결제가 있는지 먼저 확인하겠습니다.",
+      "카드 정보는 전화 안내만 듣고 입력하지 않겠습니다."
+    ],
+    "source_type": "synthetic",
+    "use_for_training": true,
+    "use_for_retrieval": true
+  },
+  {
+    "case_id": "case_006",
+    "title": "정상 가족 통화",
+    "conversation": [
+      "오늘 저녁에 집에 늦게 들어갈 것 같아요.",
+      "마트에서 장 좀 봐올게요.",
+      "필요한 거 있으면 말해주세요."
+    ],
+    "is_phishing": 0,
+    "multi_labels": [],
+    "risk_score": 5,
+    "keywords": [
+      "저녁",
+      "마트",
+      "필요한 거"
+    ],
+    "warning_reason": "금전 요구나 개인정보 요구가 없습니다.",
+    "case_summary": "일상적인 가족 통화 사례입니다.",
+    "recommended_response": [
+      "현재 특별한 대응 문구가 필요하지 않습니다."
+    ],
+    "source_type": "synthetic",
+    "use_for_training": true,
+    "use_for_retrieval": true
+  }
+]
