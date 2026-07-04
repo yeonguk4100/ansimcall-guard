@@ -72,20 +72,20 @@ Final Risk Score
 
 위험도 95점 탐지 시 감지된 유형, 유사 사례 Top 3와 함께 **지금 말할 수 있는 대응 문구**가 표시됩니다.
 
-<img src="images/dashboard_warning.png" width="900">
+<img width="1342" height="780" alt="Image" src="https://github.com/user-attachments/assets/64545d0b-eab7-4c57-b3f4-c979c2679f08" />
 
 ### 상세 분석 — LLM 2차 검증 결과
 
 누적 대화 기록, 방금 들은 말, 탐지 키워드와 함께 LLM의 판단 근거를 확인할 수 있습니다.
 
-<img src="images/dashboard_detail.png" width="900">
+<img width="1357" height="787" alt="Image" src="https://github.com/user-attachments/assets/1abfcc24-c2be-4e2a-b4e0-032e099cc485" />
+
 
 ### 신고 화면 — 1394 자동 상황요약
 
 신고 시 개인정보가 제거된 상황 안내 스크립트가 생성되고, 사례가 신고 DB에 저장됩니다.
 
-<img src="images/dashboard_report.png" width="900">
-
+<img width="1475" height="912" alt="Image" src="https://github.com/user-attachments/assets/96c9112f-2473-44cd-b06d-f5290a237c09" />
 ---
 
 ## 🏗 시스템 구조
