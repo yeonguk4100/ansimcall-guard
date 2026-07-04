@@ -6,7 +6,7 @@
 Faster-Whisper STT, Conversation Memory, KoBERT 멀티라벨 분류, Rule-based 하이브리드 탐지, Hybrid Risk Scoring, LLM 2차 검증(Gemini 2.5 Flash)을 결합하여 **통화 중** 보이스피싱을 실시간으로 탐지하고, 사용자가 바로 쓸 수 있는 대응 문구까지 제공하는 시스템입니다.
 
 <p align="center">
-<img src="images/dashboard_main.png" width="900">
+<img width="1757" height="652" alt="Image" src="https://github.com/user-attachments/assets/751266a8-cb6c-465c-82d0-8da036edcc67" />
 </p>
 
 ---
